@@ -1,0 +1,114 @@
+/* General container styling */
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+/* Apply global styles */
+body {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ab66f5ea, #5193e9);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form
+{
+    background-color: rgba(0, 0, 0, 0.164);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    color: white;
+}
+.container-lg, .form-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    max-width: 800px;
+    width: 100%;
+    margin-left: 300px;
+}
+
+/* Page header */
+h3 {
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    margin-top: 1rem;
+}
+
+form label {
+    font-weight: 600;
+    color: #444;
+}
+
+form input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+form input:focus {
+    border-color: #f76b1c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(247, 107, 28, 0.5);
+}
+
+/* Button styling */
+button {
+    background: #f76b1c;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 1rem auto 0;
+}
+
+button:hover {
+    background: #f5a623;
+    transform: scale(1.05);
+}
+
+/* Row alignment */
+.row {
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+}
+
+/* Input and label alignment */
+form .row {
+    margin-bottom: 1.5rem;
+}
+
+form .row .col:first-child {
+    flex: 1;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+form .row .col:last-child {
+    flex: 2;
+}
